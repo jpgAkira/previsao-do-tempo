@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meteorologia</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <script src="js/script.js" defer></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</head>
+<body>
+    <main class="container">
+        <div class="search">
+            <input type="text" name="cidade" id="cidade" class="msg" placeholder="Digite o nome da sua cidade aqui!">
+            <button onclick="buscar()" id="btn">
+                <span class="material-symbols-outlined">
+                    search
+                </span>
+            </button>
+        </div>
+        <div class="time">
+            <h1 class="mensagem">
+                Tempo em 
+            </h1>
+            <p class="temperatura">
+                °C
+            </p>
+            <img src="https://openweathermap.org/img/wn/04n.png" class="emoji"> <p class="tempo"></p>
+            <p class="umidade"><span></span>%</p>
+        </div>
+    </main>
+</body>
+</html>
